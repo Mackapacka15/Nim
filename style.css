@@ -3,15 +3,36 @@ body {
   grid-template-columns: 10% 1fr 10%;
   grid-template-rows: 10% 1fr 10%;
   height: 100vh;
+  background-color: rgb(112, 218, 135);
 }
 header {
   text-align: center;
   grid-column: 2 / span 1;
   grid-row: 1 / span 1;
 }
+
+.menu {
+  background-color: #2fa9ad;
+  grid-area: 2/2/3/3;
+}
+.rules {
+  color: black;
+  background-color: #2fa9ad;
+  grid-area: 2/2/3/3;
+  text-align: center;
+}
+.rules p {
+  width: 50%;
+  margin-left: 25%;
+}
 .game-area {
   grid-area: 2/2/3/3;
   display: grid;
+  background-color: #2fa9ad;
   grid-template-rows: 10% 1fr 20%;
   grid-template-columns: 1fr 30% 30% 30% 1fr;
+}
+
+.hidden {
+  display: none;
 }
