@@ -5,13 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script defer src="game.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap"
+      rel="stylesheet"
+    />
     <title>Nim</title>
   </head>
   <body>
     <header>
       <h1>Välkommen till Nim</h1>
     </header>
-    <div class="menu"></div>
+    <div class="menu">
+      <div class="Button-Rules">
+        <label>
+          <button type="button" onclick="changeToRules()">Rules</button></label
+        >
+      </div>
+    </div>
     <div class="hidden rules">
       <h3>Rules:</h3>
       <p>
@@ -20,6 +31,11 @@
         of the game. You can take 1, 2 or 3 sticks from the pile and you can't
         skipp a turn.
       </p>
+      <div class="Button-Menu">
+        <label>
+          <button type="button" onclick="changeToRules()">Menu</button></label
+        >
+      </div>
     </div>
     <div class="hidden game-area">Rules ska byta plats med Game area</div>
     <footer></footer>

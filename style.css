@@ -12,23 +12,64 @@ header {
 }
 
 .menu {
-  background-color: #2fa9ad;
+  border-radius: 90px;
+  background-color: #242582;
   grid-area: 2/2/3/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.Button-Rules {
+  text-align: center;
+  grid-area: 1/2/2/2;
+  background-color: #f64c72;
+  border-radius: 25px;
+  padding: 20px;
+  margin-top: 30%;
+  margin-bottom: 30%;
+  font-size: 100px;
+}
+.Button-Menu {
+  text-align: center;
+  grid-area: 1/2/2/2;
+  background-color: #f64c72;
+  border-radius: 25px;
+  padding: 20px;
+  font-size: 100px;
+}
+.menu button {
+  background: transparent;
+  border: 0;
+  font-family: "Sriracha", cursive;
+  font-size: 70px;
+  color: wheat;
 }
 .rules {
-  color: black;
-  background-color: #2fa9ad;
+  border-radius: 90px;
+  font-family: "Sriracha", cursive;
+  font-size: 50px;
+  color: wheat;
+  background-color: #242582;
   grid-area: 2/2/3/3;
   text-align: center;
+}
+.rules button {
+  background: transparent;
+  border: 0;
+  font-family: "Sriracha", cursive;
+  font-size: 50px;
+  color: wheat;
 }
 .rules p {
   width: 50%;
   margin-left: 25%;
+  font-size: 20px;
 }
 .game-area {
+  border-radius: 90px;
   grid-area: 2/2/3/3;
   display: grid;
-  background-color: #2fa9ad;
+  background-color: #242582;
   grid-template-rows: 10% 1fr 20%;
   grid-template-columns: 1fr 30% 30% 30% 1fr;
 }
