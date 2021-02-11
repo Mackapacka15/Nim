@@ -14,12 +14,28 @@
   </head>
   <body>
     <header>
-      <h1>Välkommen till Nim</h1>
+      <h1>Welcome to Nim</h1>
     </header>
     <div class="menu">
+      <div class="Menu-Text">
+        <p>
+          Welcome to Nim! <br />
+          Nim is a simple strategy game you can play with your friends. This is
+          a version where you can play if you don't have a opponent to play
+          against. Here you can play against 2 different opponents width 2
+          different playstyles.
+        </p>
+      </div>
       <div class="Button-Rules">
         <label>
           <button type="button" onclick="changeToRules()">Rules</button></label
+        >
+      </div>
+      <div class="Button-Play">
+        <label>
+          <button type="button" onclick="changeToOpponentSelector()">
+            Play
+          </button></label
         >
       </div>
     </div>
@@ -33,11 +49,33 @@
       </p>
       <div class="Button-Menu">
         <label>
-          <button type="button" onclick="changeToRules()">Menu</button></label
+          <button type="button" onclick="changeToRules()">Back</button></label
         >
       </div>
     </div>
-    <div class="hidden game-area">Rules ska byta plats med Game area</div>
+    <div class="hidden Opponent-Selector">
+      <div class="Menu-Text">
+        <p>
+          <strong> Who do you wish to play?</strong><br />
+          The Randomizer is Medium and The Strategist is Verry Verry Hard
+        </p>
+      </div>
+      <div class="Button-TheRandomizer">
+        <label>
+          <button type="button" onclick="opponentRandom()">
+            The Randomizer
+          </button></label
+        >
+      </div>
+      <div class="Button-TheStrategist">
+        <label>
+          <button type="button" onclick="opponentStrategist()">
+            The Strategist
+          </button></label
+        >
+      </div>
+    </div>
+    <div class="hidden game-area"></div>
     <footer></footer>
   </body>
 </html>

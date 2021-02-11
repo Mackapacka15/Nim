@@ -10,24 +10,40 @@ header {
   grid-column: 2 / span 1;
   grid-row: 1 / span 1;
 }
+header h1 {
+  font-size: 50px;
+}
 
 .menu {
   border-radius: 90px;
   background-color: #242582;
   grid-area: 2/2/3/3;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+}
+.Menu-Text {
+  grid-area: 1/1/2/3;
+  display: flex;
+  font-size: large;
+}
+.Menu-Text p {
+  margin: auto;
+  margin-top: 10%;
+  text-align: center;
+  width: 50ch;
+  font-family: "Sriracha", cursive;
+  font-size: 30px;
+  color: wheat;
 }
 .Button-Rules {
   text-align: center;
-  grid-area: 1/2/2/2;
+  grid-area: 2/1/2/2;
   background-color: #f64c72;
   border-radius: 25px;
   padding: 20px;
-  margin-top: 30%;
-  margin-bottom: 30%;
   font-size: 100px;
+  margin: 20%;
 }
 .Button-Menu {
   text-align: center;
@@ -35,7 +51,19 @@ header {
   background-color: #f64c72;
   border-radius: 25px;
   padding: 20px;
+  margin: auto;
+  margin-top: 10%;
   font-size: 100px;
+  width: 50%;
+}
+.Button-Play {
+  text-align: center;
+  grid-area: 2/2/2/3;
+  background-color: #f64c72;
+  border-radius: 25px;
+  padding: 20px;
+  font-size: 100px;
+  margin: 20%;
 }
 .menu button {
   background: transparent;
@@ -59,11 +87,46 @@ header {
   font-family: "Sriracha", cursive;
   font-size: 50px;
   color: wheat;
+  margin: auto;
 }
 .rules p {
   width: 50%;
   margin-left: 25%;
   font-size: 20px;
+}
+.Opponent-Selector {
+  border-radius: 90px;
+  grid-area: 2/2/3/3;
+  background-color: #242582;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  font-family: "Sriracha", cursive;
+  color: wheat;
+}
+
+.Opponent-Selector button {
+  background: transparent;
+  border: 0;
+  font-family: "Sriracha", cursive;
+  font-size: 40px;
+  color: wheat;
+}
+.Button-TheRandomizer {
+  text-align: center;
+  grid-area: 2/1/2/2;
+  background-color: #f64c72;
+  border-radius: 25px;
+  padding: 20px;
+  margin: 20%;
+}
+.Button-TheStrategist {
+  text-align: center;
+  grid-area: 2/2/2/3;
+  background-color: #f64c72;
+  border-radius: 25px;
+  padding: 20px;
+  margin: 20%;
 }
 .game-area {
   border-radius: 90px;
