@@ -14,7 +14,7 @@
   </head>
   <body>
     <header>
-      <h1>Welcome to Nim</h1>
+      <h1><a href="index.html">Welcome to Nim</a></h1>
     </header>
     <div class="menu">
       <div class="Menu-Text">
@@ -75,7 +75,28 @@
         >
       </div>
     </div>
-    <div class="hidden game-area"></div>
+    <div class="hidden game-area">
+      <h3 class="Turn">Your Turn</h3>
+      <div class="Sticks">
+        <h3>Sticks left:</h3>
+        <p class="Number">0</p>
+      </div>
+      <div class="Button-1">
+        <label>
+          <button type="button" onclick="playerTake1()">Take 1</button></label
+        >
+      </div>
+      <div class="Button-2">
+        <label>
+          <button type="button" onclick="playerTake2()">Take 2</button></label
+        >
+      </div>
+      <div class="Button-3">
+        <label>
+          <button type="button" onclick="playerTake3()">Take 3</button></label
+        >
+      </div>
+    </div>
     <footer></footer>
   </body>
 </html>
