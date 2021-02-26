@@ -13,6 +13,7 @@
     <title>Nim</title>
   </head>
   <body>
+    <!-- Fungerar bäst i 1440 x 980 px -->
     <header>
       <h1><a href="index.html">Welcome to Nim</a></h1>
     </header>
@@ -21,7 +22,7 @@
         <p>
           Welcome to Nim! <br />
           Nim is a simple strategy game you can play with your friends. This is
-          a version where you can play if you don't have a opponent to play
+          a version where you can play if you don't have an opponent to play
           against. Here you can play against 2 different opponents width 2
           different playstyles.
         </p>
@@ -45,7 +46,7 @@
         The object of the game is to make the opponent take the last stick left
         in the pile. The ammount of sticks will be randomized in the beginning
         of the game. You can take 1, 2 or 3 sticks from the pile and you can't
-        skipp a turn.
+        skip a turn.
       </p>
       <div class="Button-Menu">
         <label>
@@ -57,7 +58,7 @@
       <div class="Menu-Text">
         <p>
           <strong> Who do you wish to play?</strong><br />
-          The Randomizer is Medium and The Strategist is Verry Verry Hard
+          The Randomizer is Medium and The Strategist is Very Very Hard
         </p>
       </div>
       <div class="Button-TheRandomizer">
@@ -76,10 +77,10 @@
       </div>
     </div>
     <div class="hidden game-area">
-      <h3 class="Turn">Your Turn</h3>
+      <h3 id="BotSticks"></h3>
       <div class="Sticks">
         <h3>Sticks left:</h3>
-        <p class="Number">0</p>
+        <p id="Number"></p>
       </div>
       <div class="Button-1">
         <label>
@@ -96,6 +97,15 @@
           <button type="button" onclick="playerTake3()">Take 3</button></label
         >
       </div>
+    </div>
+    <div class="hidden Win">
+      <h3>
+        You Won!! <br />
+        Press the headder to go back to the menu.
+      </h3>
+    </div>
+    <div class="hidden Lost">
+      <h3>You Lost. Press the headder to go back to the menu.</h3>
     </div>
     <footer></footer>
   </body>
